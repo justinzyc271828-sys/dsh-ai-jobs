@@ -1,0 +1,6 @@
+node_modules/
+data/probed.json
+data/discovered.json
+probe.log
+*.tgz
+.dsh-ai-jobs-*

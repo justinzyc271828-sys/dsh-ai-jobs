@@ -1,0 +1,800 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-01T07:14:59.279Z",
+  "companies": [
+    {
+      "company": "Airbnb",
+      "handle": "airbnb",
+      "ats": "greenhouse",
+      "token": "airbnb",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 202,
+      "careersUrl": "https://job-boards.greenhouse.io/airbnb"
+    },
+    {
+      "company": "Airtable",
+      "handle": "airtable",
+      "ats": "greenhouse",
+      "token": "airtable",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 5,
+      "careersUrl": "https://job-boards.greenhouse.io/airtable"
+    },
+    {
+      "company": "Anthropic",
+      "handle": "anthropic",
+      "ats": "greenhouse",
+      "token": "anthropic",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 675,
+      "careersUrl": "https://job-boards.greenhouse.io/anthropic"
+    },
+    {
+      "company": "Anyscale",
+      "handle": "anyscale",
+      "ats": "ashby",
+      "token": "anyscale",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 22,
+      "careersUrl": "https://jobs.ashbyhq.com/anyscale"
+    },
+    {
+      "company": "Asana",
+      "handle": "asana",
+      "ats": "greenhouse",
+      "token": "asana",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 110,
+      "careersUrl": "https://job-boards.greenhouse.io/asana"
+    },
+    {
+      "company": "Baseten",
+      "handle": "baseten",
+      "ats": "ashby",
+      "token": "baseten",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 105,
+      "careersUrl": "https://jobs.ashbyhq.com/baseten"
+    },
+    {
+      "company": "Brex",
+      "handle": "brex",
+      "ats": "greenhouse",
+      "token": "brex",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 263,
+      "careersUrl": "https://job-boards.greenhouse.io/brex"
+    },
+    {
+      "company": "Cerebras",
+      "handle": "cerebras",
+      "ats": "ashby",
+      "token": "cerebras",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 116,
+      "careersUrl": "https://jobs.ashbyhq.com/cerebras"
+    },
+    {
+      "company": "Character.AI",
+      "handle": "character",
+      "ats": "ashby",
+      "token": "character",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 13,
+      "careersUrl": "https://jobs.ashbyhq.com/character"
+    },
+    {
+      "company": "Chroma",
+      "handle": "chroma",
+      "ats": "ashby",
+      "token": "trychroma",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 1,
+      "careersUrl": "https://jobs.ashbyhq.com/trychroma"
+    },
+    {
+      "company": "Cloudflare",
+      "handle": "cloudflare",
+      "ats": "greenhouse",
+      "token": "cloudflare",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 464,
+      "careersUrl": "https://job-boards.greenhouse.io/cloudflare"
+    },
+    {
+      "company": "Cognition",
+      "handle": "cognition",
+      "ats": "ashby",
+      "token": "cognition",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 106,
+      "careersUrl": "https://jobs.ashbyhq.com/cognition"
+    },
+    {
+      "company": "Cohere",
+      "handle": "cohere",
+      "ats": "ashby",
+      "token": "cohere",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 122,
+      "careersUrl": "https://jobs.ashbyhq.com/cohere"
+    },
+    {
+      "company": "Coinbase",
+      "handle": "coinbase",
+      "ats": "greenhouse",
+      "token": "coinbase",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 254,
+      "careersUrl": "https://job-boards.greenhouse.io/coinbase"
+    },
+    {
+      "company": "Cursor (Anysphere)",
+      "handle": "cursor",
+      "ats": "ashby",
+      "token": "cursor",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 125,
+      "careersUrl": "https://jobs.ashbyhq.com/cursor"
+    },
+    {
+      "company": "Databricks",
+      "handle": "databricks",
+      "ats": "greenhouse",
+      "token": "databricks",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 904,
+      "careersUrl": "https://job-boards.greenhouse.io/databricks"
+    },
+    {
+      "company": "Datadog",
+      "handle": "datadog",
+      "ats": "greenhouse",
+      "token": "datadog",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 397,
+      "careersUrl": "https://job-boards.greenhouse.io/datadog"
+    },
+    {
+      "company": "Decagon",
+      "handle": "decagon",
+      "ats": "ashby",
+      "token": "decagon",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 133,
+      "careersUrl": "https://jobs.ashbyhq.com/decagon"
+    },
+    {
+      "company": "Discord",
+      "handle": "discord",
+      "ats": "greenhouse",
+      "token": "discord",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 41,
+      "careersUrl": "https://job-boards.greenhouse.io/discord"
+    },
+    {
+      "company": "Duolingo",
+      "handle": "duolingo",
+      "ats": "greenhouse",
+      "token": "duolingo",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 57,
+      "careersUrl": "https://job-boards.greenhouse.io/duolingo"
+    },
+    {
+      "company": "Elastic",
+      "handle": "elastic",
+      "ats": "greenhouse",
+      "token": "elastic",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 407,
+      "careersUrl": "https://job-boards.greenhouse.io/elastic"
+    },
+    {
+      "company": "ElevenLabs",
+      "handle": "elevenlabs",
+      "ats": "ashby",
+      "token": "elevenlabs",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 138,
+      "careersUrl": "https://jobs.ashbyhq.com/elevenlabs"
+    },
+    {
+      "company": "Figma",
+      "handle": "figma",
+      "ats": "greenhouse",
+      "token": "figma",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 140,
+      "careersUrl": "https://job-boards.greenhouse.io/figma"
+    },
+    {
+      "company": "Fireworks AI",
+      "handle": "fireworks",
+      "ats": "ashby",
+      "token": "fireworks",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 90,
+      "careersUrl": "https://jobs.ashbyhq.com/fireworks"
+    },
+    {
+      "company": "GitLab",
+      "handle": "gitlab",
+      "ats": "greenhouse",
+      "token": "gitlab",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 238,
+      "careersUrl": "https://job-boards.greenhouse.io/gitlab"
+    },
+    {
+      "company": "Glean",
+      "handle": "glean",
+      "ats": "greenhouse",
+      "token": "gleanwork",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 127,
+      "careersUrl": "https://job-boards.greenhouse.io/gleanwork"
+    },
+    {
+      "company": "Harvey",
+      "handle": "harvey",
+      "ats": "ashby",
+      "token": "harvey",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 381,
+      "careersUrl": "https://jobs.ashbyhq.com/harvey"
+    },
+    {
+      "company": "Hebbia",
+      "handle": "hebbia",
+      "ats": "ashby",
+      "token": "hebbia-ai",
+      "tags": [
+        "ai-native"
+      ],
+      "careersUrl": "https://jobs.ashbyhq.com/hebbia-ai",
+      "jobs": null
+    },
+    {
+      "company": "Inflection AI",
+      "handle": "inflection",
+      "ats": "greenhouse",
+      "token": "inflectionai",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 4,
+      "careersUrl": "https://job-boards.greenhouse.io/inflectionai"
+    },
+    {
+      "company": "Instacart",
+      "handle": "instacart",
+      "ats": "greenhouse",
+      "token": "instacart",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 96,
+      "careersUrl": "https://job-boards.greenhouse.io/instacart"
+    },
+    {
+      "company": "Khan Academy",
+      "handle": "khanacademy",
+      "ats": "greenhouse",
+      "token": "khanacademy",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 4,
+      "careersUrl": "https://job-boards.greenhouse.io/khanacademy"
+    },
+    {
+      "company": "Kraken",
+      "handle": "kraken",
+      "ats": "ashby",
+      "token": "kraken.com",
+      "tags": [
+        "ai-user"
+      ],
+      "careersUrl": "https://jobs.ashbyhq.com/kraken.com",
+      "jobs": null
+    },
+    {
+      "company": "LangChain",
+      "handle": "langchain",
+      "ats": "ashby",
+      "token": "langchain",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 98,
+      "careersUrl": "https://jobs.ashbyhq.com/langchain"
+    },
+    {
+      "company": "Linear",
+      "handle": "linear",
+      "ats": "ashby",
+      "token": "linear",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 31,
+      "careersUrl": "https://jobs.ashbyhq.com/linear"
+    },
+    {
+      "company": "LlamaIndex",
+      "handle": "llamaindex",
+      "ats": "ashby",
+      "token": "llamaindex",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 4,
+      "careersUrl": "https://jobs.ashbyhq.com/llamaindex"
+    },
+    {
+      "company": "Luma AI",
+      "handle": "luma",
+      "ats": "ashby",
+      "token": "lumaai",
+      "tags": [
+        "ai-native"
+      ],
+      "careersUrl": "https://jobs.ashbyhq.com/lumaai",
+      "jobs": null
+    },
+    {
+      "company": "Lyft",
+      "handle": "lyft",
+      "ats": "greenhouse",
+      "token": "lyft",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 170,
+      "careersUrl": "https://job-boards.greenhouse.io/lyft"
+    },
+    {
+      "company": "Magic",
+      "handle": "magic",
+      "ats": "ashby",
+      "token": "magic",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 10,
+      "careersUrl": "https://jobs.ashbyhq.com/magic"
+    },
+    {
+      "company": "Mercor",
+      "handle": "mercor",
+      "ats": "ashby",
+      "token": "mercor",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 108,
+      "careersUrl": "https://jobs.ashbyhq.com/mercor"
+    },
+    {
+      "company": "Midjourney",
+      "handle": "midjourney",
+      "ats": "ashby",
+      "token": "midjourney",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 17,
+      "careersUrl": "https://jobs.ashbyhq.com/midjourney"
+    },
+    {
+      "company": "Mistral AI",
+      "handle": "mistral",
+      "ats": "ashby",
+      "token": "mistral.ai",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "careersUrl": "https://jobs.ashbyhq.com/mistral.ai",
+      "jobs": null
+    },
+    {
+      "company": "Modal",
+      "handle": "modal",
+      "ats": "ashby",
+      "token": "modal",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 43,
+      "careersUrl": "https://jobs.ashbyhq.com/modal"
+    },
+    {
+      "company": "MongoDB",
+      "handle": "mongodb",
+      "ats": "greenhouse",
+      "token": "mongodb",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 366,
+      "careersUrl": "https://job-boards.greenhouse.io/mongodb"
+    },
+    {
+      "company": "Notion",
+      "handle": "notion",
+      "ats": "ashby",
+      "token": "notion",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 148,
+      "careersUrl": "https://jobs.ashbyhq.com/notion"
+    },
+    {
+      "company": "OpenAI",
+      "handle": "openai",
+      "ats": "ashby",
+      "token": "openai",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 810,
+      "careersUrl": "https://jobs.ashbyhq.com/openai"
+    },
+    {
+      "company": "Perplexity",
+      "handle": "perplexity",
+      "ats": "ashby",
+      "token": "perplexity",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 138,
+      "careersUrl": "https://jobs.ashbyhq.com/perplexity"
+    },
+    {
+      "company": "Pika",
+      "handle": "pika",
+      "ats": "ashby",
+      "token": "pika",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 16,
+      "careersUrl": "https://jobs.ashbyhq.com/pika"
+    },
+    {
+      "company": "Pinecone",
+      "handle": "pinecone",
+      "ats": "ashby",
+      "token": "pinecone",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 8,
+      "careersUrl": "https://jobs.ashbyhq.com/pinecone"
+    },
+    {
+      "company": "Pinterest",
+      "handle": "pinterest",
+      "ats": "greenhouse",
+      "token": "pinterest",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 170,
+      "careersUrl": "https://job-boards.greenhouse.io/pinterest"
+    },
+    {
+      "company": "Plaid",
+      "handle": "plaid",
+      "ats": "ashby",
+      "token": "plaid",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 132,
+      "careersUrl": "https://jobs.ashbyhq.com/plaid"
+    },
+    {
+      "company": "Poolside",
+      "handle": "poolside",
+      "ats": "ashby",
+      "token": "poolside",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 2,
+      "careersUrl": "https://jobs.ashbyhq.com/poolside"
+    },
+    {
+      "company": "Ramp",
+      "handle": "ramp",
+      "ats": "greenhouse",
+      "token": "ramp",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 1,
+      "careersUrl": "https://job-boards.greenhouse.io/ramp"
+    },
+    {
+      "company": "Reddit",
+      "handle": "reddit",
+      "ats": "greenhouse",
+      "token": "reddit",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 163,
+      "careersUrl": "https://job-boards.greenhouse.io/reddit"
+    },
+    {
+      "company": "Replit",
+      "handle": "replit",
+      "ats": "ashby",
+      "token": "replit",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 34,
+      "careersUrl": "https://jobs.ashbyhq.com/replit"
+    },
+    {
+      "company": "Roblox",
+      "handle": "roblox",
+      "ats": "greenhouse",
+      "token": "roblox",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 268,
+      "careersUrl": "https://job-boards.greenhouse.io/roblox"
+    },
+    {
+      "company": "Runway",
+      "handle": "runway",
+      "ats": "ashby",
+      "token": "runway",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 3,
+      "careersUrl": "https://jobs.ashbyhq.com/runway"
+    },
+    {
+      "company": "Scale AI",
+      "handle": "scale",
+      "ats": "greenhouse",
+      "token": "scaleai",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 170,
+      "careersUrl": "https://job-boards.greenhouse.io/scaleai"
+    },
+    {
+      "company": "Sierra",
+      "handle": "sierra",
+      "ats": "ashby",
+      "token": "sierra",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 220,
+      "careersUrl": "https://jobs.ashbyhq.com/sierra"
+    },
+    {
+      "company": "Snowflake",
+      "handle": "snowflake",
+      "ats": "ashby",
+      "token": "snowflake",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 366,
+      "careersUrl": "https://jobs.ashbyhq.com/snowflake"
+    },
+    {
+      "company": "Spotify",
+      "handle": "spotify",
+      "ats": "lever",
+      "token": "spotify",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 89,
+      "careersUrl": "https://jobs.lever.co/spotify"
+    },
+    {
+      "company": "Stability AI",
+      "handle": "stabilityai",
+      "ats": "greenhouse",
+      "token": "stabilityai",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 3,
+      "careersUrl": "https://job-boards.greenhouse.io/stabilityai"
+    },
+    {
+      "company": "Stripe",
+      "handle": "stripe",
+      "ats": "greenhouse",
+      "token": "stripe",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 745,
+      "careersUrl": "https://job-boards.greenhouse.io/stripe"
+    },
+    {
+      "company": "Suno",
+      "handle": "suno",
+      "ats": "ashby",
+      "token": "suno",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 71,
+      "careersUrl": "https://jobs.ashbyhq.com/suno"
+    },
+    {
+      "company": "Thinking Machines Lab",
+      "handle": "thinkingmachines",
+      "ats": "ashby",
+      "token": "thinkingmachines",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 53,
+      "careersUrl": "https://jobs.ashbyhq.com/thinkingmachines"
+    },
+    {
+      "company": "Together AI",
+      "handle": "together",
+      "ats": "greenhouse",
+      "token": "togetherai",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 88,
+      "careersUrl": "https://job-boards.greenhouse.io/togetherai"
+    },
+    {
+      "company": "Turing",
+      "handle": "turing",
+      "ats": "greenhouse",
+      "token": "turing",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 39,
+      "careersUrl": "https://job-boards.greenhouse.io/turing"
+    },
+    {
+      "company": "Twilio",
+      "handle": "twilio",
+      "ats": "greenhouse",
+      "token": "twilio",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 132,
+      "careersUrl": "https://job-boards.greenhouse.io/twilio"
+    },
+    {
+      "company": "Vectara",
+      "handle": "vectara",
+      "ats": "greenhouse",
+      "token": "vectara",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 7,
+      "careersUrl": "https://job-boards.greenhouse.io/vectara"
+    },
+    {
+      "company": "Vercel",
+      "handle": "vercel",
+      "ats": "greenhouse",
+      "token": "vercel",
+      "tags": [
+        "ai-user"
+      ],
+      "jobs": 91,
+      "careersUrl": "https://job-boards.greenhouse.io/vercel"
+    },
+    {
+      "company": "Weaviate",
+      "handle": "weaviate",
+      "ats": "ashby",
+      "token": "weaviate",
+      "tags": [
+        "ai-native"
+      ],
+      "jobs": 2,
+      "careersUrl": "https://jobs.ashbyhq.com/weaviate"
+    },
+    {
+      "company": "xAI",
+      "handle": "xai",
+      "ats": "greenhouse",
+      "token": "xai",
+      "tags": [
+        "frontier-lab",
+        "ai-native"
+      ],
+      "jobs": 308,
+      "careersUrl": "https://job-boards.greenhouse.io/xai"
+    }
+  ]
+}

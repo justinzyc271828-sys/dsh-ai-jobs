@@ -1,0 +1,58 @@
+{
+  "name": "dsh-ai-jobs",
+  "version": "0.1.0",
+  "description": "AI hiring radar for DeepSeek Harness: index public AI job boards, rank postings, mine hiring requirements, and push a daily digest.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "data",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs",
+    "seed": "node scripts/build-seed.mjs",
+    "probe": "node scripts/probe-companies.mjs data/probed.json",
+    "discover": "node scripts/discover-misses.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "jobs",
+    "hiring",
+    "recruiting",
+    "ai-jobs",
+    "greenhouse",
+    "ashby",
+    "lever",
+    "ats"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinzyc271828-sys/dsh-ai-jobs.git"
+  },
+  "homepage": "https://github.com/justinzyc271828-sys/dsh-ai-jobs#readme",
+  "bugs": {
+    "url": "https://github.com/justinzyc271828-sys/dsh-ai-jobs/issues"
+  },
+  "author": "justinzyc271828-sys",
+  "license": "MIT",
+  "sideEffects": false
+}

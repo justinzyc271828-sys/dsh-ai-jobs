@@ -1,0 +1,24 @@
+# dsh-ai-jobs — bundle layer for DeepSeek Harness.
+#
+# Mounted as one profile plugin row. The id is local to the profile; `name`
+# must equal the installed package name.
+- insert:
+    - id: ai-jobs
+      name: dsh-ai-jobs
+      # Optional configuration — uncomment and edit to taste.
+      # config:
+      #   lang: zh                       # zh | en digest language
+      #   timeZone: Asia/Shanghai
+      #   concurrency: 4                 # parallel board fetches
+      #   skillsOfInterest: [LLM, RAG, inference, agents]
+      #   preferredLocations: [San Francisco, Remote]
+      #   digestPerCompany: 4
+      #   digestLimit: 30
+      #   dailyDigest:
+      #     enabled: true                # arm one reminder per session on first run
+      #     time: '09:00:00'
+      #   companies:                     # extra boards appended to the shipped seed
+      #     - company: Mistral
+      #       ats: ashby
+      #       token: mistral
+      #       tags: [frontier-lab]
