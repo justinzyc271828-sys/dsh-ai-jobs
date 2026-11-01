@@ -26,7 +26,7 @@ companies. This plugin keeps one local index, so you can ask cross-company quest
 | **Collect** | 71 pre-verified boards (Greenhouse, Ashby, Lever) + Workable/SmartRecruiters for your own additions |
 | **Normalize** | One posting shape across ATSes: title, locations, remote flag, department, dates, URL, JD text |
 | **Classify** | `core` / `adjacent` / `other` AI relevance, role family, seniority — rule-based and auditable |
-| **Mine** | Years of experience, degree, work mode, compensation range, visa sponsorship, 40-skill vocabulary |
+| **Mine** | Years of experience, degree, work mode, compensation range, visa sponsorship, 38-skill vocabulary |
 | **Rank** | 0–100 score from relevance, freshness, seniority, your skills of interest and preferred locations |
 | **Store** | Local JSON index with JD snapshots, change history, and a digest cursor |
 | **Push** | Markdown digest + optional daily reminder through the harness scheduler |

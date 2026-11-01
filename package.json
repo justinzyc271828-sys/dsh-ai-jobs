@@ -10,7 +10,7 @@
   },
   "files": [
     "src",
-    "data",
+    "data/companies.json",
     "cordis.patch.yml",
     "README.md",
     "README.zh-CN.md",

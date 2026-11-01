@@ -10,7 +10,7 @@ First release.
 - Rule-based classification: `core` / `adjacent` / `other` AI relevance, role family, seniority;
   non-engineering AI titles (counsel, sales, policy, finance, recruiting …) are filtered out.
 - Requirement mining from JD text: years of experience, degree, work mode, compensation range,
-  visa sponsorship, and a 40-skill vocabulary.
+  visa sponsorship, and a 38-skill vocabulary.
 - 0–100 relevance score combining tier, freshness, seniority, your skills of interest, preferred
   locations, and disclosed compensation.
 - Local JSON index with JD snapshots, change tracking, and a digest cursor.
