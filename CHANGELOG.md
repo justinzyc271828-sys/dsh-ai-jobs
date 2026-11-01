@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.1 — 2026-11-01
+
+- People-management titles that carry AI vocabulary (program / product / project manager, TPM) are
+  now `adjacent`, not `core`: a manager of AI work is a real opening, but not an AI IC role.
+- Existing indexes are reclassified on load (`CLASSIFIER_VERSION`), so an upgrade does not keep
+  serving the previous release's tiers until every posting is refetched.
+- The digest folds the same opening posted to several locations into one entry and shows all
+  locations on one line.
+- `ai_jobs_status` now reports `lastUpdatedAt`: the index timestamp is persisted with the store
+  instead of living only in the response.
+- Smoke test covers the classifier migration, the manager/IC distinction, and digest folding.
+
 ## 0.1.0 — 2026-11-01
 
 First release.

@@ -52,19 +52,39 @@ export function buildDigest({ postings, profile = {}, sinceIso = null, perCompan
 
   const perCompanyCount = new Map()
   const picked = []
+  // One opening is often posted once per eligible location; fold those into a single
+  // line instead of letting them eat the per-company budget.
+  const seen = new Map()
   for (const entry of scored) {
     const company = entry.posting.company
     const used = perCompanyCount.get(company) ?? 0
     if (used >= perCompany) continue
+    const key = `${company.toLowerCase()}|${String(entry.posting.title ?? '').toLowerCase()}`
+    const existing = seen.get(key)
+    if (existing) {
+      const location = String(entry.posting.location ?? '').trim()
+      if (location && !existing.locations.includes(location)) existing.locations.push(location)
+      continue
+    }
     perCompanyCount.set(company, used + 1)
-    picked.push(entry)
+    const pickedEntry = {
+      posting: entry.posting,
+      score: entry.score,
+      locations: entry.posting.location ? [String(entry.posting.location).trim()] : [],
+    }
+    seen.set(key, pickedEntry)
+    picked.push(pickedEntry)
     if (picked.length >= limit) break
   }
 
   const byCompany = new Map()
   for (const entry of picked) {
     const list = byCompany.get(entry.posting.company) ?? []
-    list.push({ ...entry.posting, score: entry.score })
+    list.push({
+      ...entry.posting,
+      ...(entry.locations.length > 1 ? { location: entry.locations.join(' / ') } : {}),
+      score: entry.score,
+    })
     byCompany.set(entry.posting.company, list)
   }
 

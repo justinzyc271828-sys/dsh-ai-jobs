@@ -2,7 +2,7 @@
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, rename, unlink, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import { classifyTitle, extractRequirements, scorePosting } from './classify.js'
+import { CLASSIFIER_VERSION, classifyTitle, extractRequirements, scorePosting } from './classify.js'
 import { truncate } from './text.js'
 
 const STORE_VERSION = 1
@@ -17,7 +17,15 @@ export function boardKey(ats, token) {
 }
 
 function emptyStore() {
-  return { version: STORE_VERSION, updatedAt: null, boards: {}, postings: {}, lastDigestAt: null, digestRuns: 0 }
+  return {
+    version: STORE_VERSION,
+    classifierVersion: CLASSIFIER_VERSION,
+    updatedAt: null,
+    boards: {},
+    postings: {},
+    lastDigestAt: null,
+    digestRuns: 0,
+  }
 }
 
 export class JobStore {
@@ -41,17 +49,43 @@ export class JobStore {
         // Forward-compatible read: keep recognized containers, drop the rest.
         this.data = { ...emptyStore(), ...parsed, version: STORE_VERSION }
       }
+      // Stores written before classifier versioning hold rules from an older release.
+      if (parsed.classifierVersion === undefined) this.data.classifierVersion = 0
     } catch (error) {
       if (error.code !== 'ENOENT') {
         // A corrupt store must not take the host down; keep a copy and start over.
         await rename(this.file, `${this.file}.corrupt-${Date.now()}`).catch(() => {})
       }
     }
+    this.migrateClassifier()
     return this
   }
 
+  /**
+   * Re-run title classification over the whole index when the rules changed.
+   * Tiers are cached on each record, so without this an upgrade would keep serving
+   * last release's judgement until every posting is refetched.
+   * @returns {number} records whose tier/family/seniority changed
+   */
+  migrateClassifier() {
+    if (this.data.classifierVersion === CLASSIFIER_VERSION) return 0
+    let changed = 0
+    for (const record of Object.values(this.data.postings)) {
+      const tags = this.data.boards[boardKey(record.ats, record.token)]?.tags ?? []
+      const classified = classifyTitle(record.title, tags)
+      if (record.tier !== classified.tier || record.family !== classified.family || record.seniority !== classified.seniority) {
+        changed += 1
+      }
+      Object.assign(record, classified)
+    }
+    this.data.classifierVersion = CLASSIFIER_VERSION
+    this.dirty = true
+    return changed
+  }
+
   async save() {
-    const payload = JSON.stringify({ ...this.data, updatedAt: new Date().toISOString() })
+    this.data.updatedAt = new Date().toISOString()
+    const payload = JSON.stringify(this.data)
     const tmp = `${this.file}.tmp-${process.pid}`
     await writeFile(tmp, payload, 'utf8')
     await rename(tmp, this.file)

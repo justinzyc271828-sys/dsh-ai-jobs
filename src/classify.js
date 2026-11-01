@@ -85,6 +85,12 @@ const SENIORITY_RULES = [
   ['manager', /\bmanager\b/],
 ]
 
+/**
+ * People-management titles: they can carry AI vocabulary ("Program Manager, LLM Data
+ * Operations") without being an AI IC role, so they never rank as core.
+ */
+const MANAGERIAL_TITLE = /\b(program|project|product)\s+(?:manager|lead)\b|\btechnical\s+program\s+manager\b|\btpm\b/
+
 /** Titles that mention AI but hire for a non-engineering function. */
 const NON_TECHNICAL_TITLE =
   /\b(counsel|legal|attorney|paralegal|compliance|policy|government\s+(?:affairs|relations)|public\s+sector|marketing|brand|communications?|content\s+(?:strategist|writer|designer)|copywriter|sales|account\s+executive|business\s+development|partnerships?|customer\s+success|technical\s+support|recruit\w+|talent|people\s+(?:ops|partner)|human\s+resources|payroll|finance|accounting|tax|procurement|supply\s+chain|cost\s+management|audit|facilities|workplace|executive\s+assistant|editor|producer|analyst,\s+(?:finance|sales|marketing))\b/
@@ -97,6 +103,8 @@ export function classifyTitle(title, companyTags = []) {
   else if (ADJACENT_PATTERNS.some((re) => re.test(text))) tier = 'adjacent'
   // Labs post bare "Member of Technical Staff" roles that never name a stack.
   if (tier === 'other' && companyTags.includes('frontier-lab') && /technical\s+staff|researcher/.test(text)) tier = 'core'
+  // A manager of AI work is a real opening, but it is not an AI IC role.
+  if (tier === 'core' && MANAGERIAL_TITLE.test(text)) tier = 'adjacent'
 
   let family = 'other'
   if (/\bresearch\b/.test(text)) family = 'research'
@@ -220,6 +228,12 @@ const SENIORITY_POINTS = {
   newgrad: -5,
   intern: -8,
 }
+
+/**
+ * Bump when title rules change: the store reclassifies existing postings on load so
+ * an upgrade does not leave stale tiers behind.
+ */
+export const CLASSIFIER_VERSION = 2
 
 const TIER_POINTS = { core: 55, adjacent: 28, other: 8 }
 

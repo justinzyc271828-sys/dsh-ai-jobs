@@ -138,7 +138,7 @@ discovery is manual by design — the seed was verified one board at a time.
 ## How ranking works
 
 ```
-score = tier(55 core / 30 adjacent / 8 other)
+score = tier(55 core / 28 adjacent / 8 other)
       + freshness (30 → 0 over ~40 days)
       + seniority (-6 intern … +7 principal)
       + skills-of-interest overlap (max 12)
@@ -148,6 +148,8 @@ score = tier(55 core / 30 adjacent / 8 other)
 
 Titles that mention AI but hire for a non-engineering function (counsel, sales, policy, marketing,
 recruiting, finance, procurement …) are classified `other` before the AI patterns run.
+People-management titles that carry AI vocabulary (program / product / project manager, TPM) end up
+`adjacent`: they are real openings, but they are not AI individual-contributor roles.
 
 ## Data & privacy
 
